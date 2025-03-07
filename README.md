@@ -5,6 +5,9 @@
 🚀 Home Page Design
 
 
+📌 Live Demo
+
+[🔗 View Live Project ()](https://github.com/user-attachments/assets/41c53512-a748-4e89-83f1-411a203030d9)
 
 > A fully responsive and beautifully designed homepage created using HTML & CSS without any frameworks or libraries.
 Designed with Canva and AI-generated images to enhance the visual appeal.
@@ -25,22 +28,7 @@ Designed with Canva and AI-generated images to enhance the visual appeal.
 
 ---
 
-📌 Live Demo
-
-🔗 View Live Project ()
-
-
----
-
-📷 Screenshots
-
-💻 Desktop View
-
-
-
-📱 Mobile View
-
-
+ 
 
 
 ---
@@ -73,7 +61,10 @@ git clone https://github.com/your-username/home-page-design.git
 
 
 ---
+## 📷 Image & GIF Previews  
 
+⚠️ **Note:** Images and GIFs were not uploaded due to GitHub's file size limits.  
+You can download them from an external source or check the live demo:
 🏆 Contribution
 
 🤝 Contributions are welcome! If you'd like to improve the design, feel free to submit a pull request.
