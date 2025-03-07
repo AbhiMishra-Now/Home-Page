@@ -45,11 +45,6 @@ AI Tools – Image generation
 
 ---
 
-📝 Code Explanation
-
-
----
-
 🎯 How to Use
 
 1️⃣ Clone the repository:
