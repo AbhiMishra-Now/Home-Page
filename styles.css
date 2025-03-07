@@ -1,0 +1,467 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.product-circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.features-container {
+    display: grid;
+    grid-template-areas:
+        "real-food . premium"
+        ". product-circle ."
+        "fresh . vet";
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.features {
+    display: contents;
+}
+
+.feature.real-food {
+    grid-area: real-food;
+}
+
+.feature.premium {
+    grid-area: premium;
+}
+
+.feature.fresh {
+    grid-area: fresh;
+}
+
+.feature.vet {
+    grid-area: vet;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background-color: #e3f1e3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.real-food .feature-icon {
+    background-color: #e3f1e3;
+}
+
+.premium .feature-icon {
+    background-color: #f9f3d9;
+}
+
+.fresh .feature-icon {
+    background-color: #e3f1e3;
+}
+
+.vet .feature-icon {
+    background-color: #fce5e5;
+}
+
+.feature-text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.feature-text p {
+    font-size: 12px;
+    color: #666;
+}
+
+.cta-button {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 3rem auto 15px;
+    padding: 15px;
+    background-color: #e86c42;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d65a33;
+}
+
+.payment-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.payment-info svg {
+    margin-right: 10px;
+}
+
+.payment-info span {
+    margin-right: 10px;
+}
+
+.payment-logo {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Nutrition Section */
+.nutrition-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.nutrition-content {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.nutrition-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.nutrition-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.key-points {
+    margin: 30px 0;
+}
+
+.key-points h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.stat {
+    margin-bottom: 15px;
+}
+
+.stat-percentage {
+    color: #e86c42;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.stat-text {
+    font-size: 14px;
+}
+
+.nutrition-image {
+    flex: 1;
+    max-width: 700px;
+    max-height: 400px;
+}
+
+.nutrition-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* GI Health Section */
+.gi-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin-top: 3rem;
+}
+
+.gi-image {
+    flex: 1;
+    max-width: 900px;
+    margin-right: 20px;
+}
+
+.gi-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gi-content {
+    flex: 2;
+    max-width: 600px;
+}
+
+.gi-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.gi-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Prebiotics Section */
+.prebiotics-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.prebiotics-content {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+.prebiotics-content h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.prebiotics-content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.prebiotics-image {
+    flex: 1;
+    max-width: 700px;
+}
+
+.prebiotics-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 40px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 5rem;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffe44b;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .nutrition-section .container,
+    .gi-section .container,
+    .prebiotics-section .container {
+        flex-direction: column;
+    }
+
+    .nutrition-content,
+    .gi-content,
+    .prebiotics-content,
+    .gi-image {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .features-container {
+        grid-template-areas:
+            "real-food"
+            "premium"
+            "product-circle"
+            "fresh"
+            "vet";
+    }
+
+    .product-circle {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .product-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .nutrition-content h2,
+    .gi-content h2,
+    .prebiotics-content h2 {
+        font-size: 24px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
